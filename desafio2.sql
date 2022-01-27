@@ -51,5 +51,6 @@ select peliculas, length(peliculas) as longitud_titulo from peliculas;
 
 -- Consultamos cual es la longitud mas grande.
 -- usamos la misma consulta anterior pero ordenamos por longitud de manera descendiente y limitamos la busqueda a 1 para que solo aparezca el mayor
+-- comentario: esto puede dar un problema eventualmente en el caso que haya mas de una pelicula con la misma longitud_titulo pero en este caso no afecta
 
 select peliculas, length(peliculas) as longitud_titulo from peliculas order by longitud_titulo desc limit 1;
